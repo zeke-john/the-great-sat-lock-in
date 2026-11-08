@@ -150,7 +150,7 @@ async function renderSection(sec, scrollTo) {
     const pass = r => (!v.diff.length || v.diff.includes(r.difficulty)) && (!v.video || r.video) && (!v.bedrock || r.legacy === 2);
     const tile = r => { const b = r.bookmarked ? 'bm' : r.status === 'solved' ? 'ok' : r.status === 'missed' ? 'bad' : '';
       const ic = r.bookmarked ? ICONS.bm : r.status === 'solved' ? '<svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>' : '<svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>';
-      return `<a class="tile ${r.difficulty} ${r.video ? 'vid' : ''}" href="#/q/${r.id}" data-id="${r.id}" data-skill="${r.skill_cd}" title="${esc(r.skill)} ${r.ord} · ${DIFF[r.difficulty]}${r.legacy === 2 ? ' · Bedrock' : ''}${r.video ? ' · video solution' : ''}${r.first_ms ? ' · ' + fmt(r.first_ms) : ''}">${r.ord}${r.video ? `<span class="pv">${I.play}</span>` : (r.legacy === 2 ? `<span class="pv bk">B</span>` : '')}${b ? `<span class="bd ${b}">${ic}</span>` : ''}</a>`; };
+      return `<a class="tile ${r.difficulty} ${r.video ? 'vid' : ''}" href="#/q/${r.id}" data-id="${r.id}" data-skill="${r.skill_cd}" title="${esc(r.skill)} ${r.ord} · ${DIFF[r.difficulty]}${r.legacy === 2 ? ' · Bedrock' : ''}${r.video ? ' · video solution' : ''}${r.first_ms ? ' · ' + fmt(r.first_ms) : ''}">${r.ord}${r.video ? `<span class="pv">${I.play}</span>` : (r.legacy === 2 ? `<span class="pv bk">💎</span>` : '')}${b ? `<span class="bd ${b}">${ic}</span>` : ''}</a>`; };
     const skillBlock = (s, items, rowsByDiff) => {
       const tot = all.filter(r => r.skill_cd === s.cd), sv = tot.filter(r => r.status === 'solved').length;
       const body = rowsByDiff
@@ -187,7 +187,7 @@ async function renderSection(sec, scrollTo) {
         </aside>
         <main class="main">
           <div class="top"><button class="hamb" id="sb" title="Toggle sidebar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><h2>Problems</h2>
-            ${['E', 'M', 'H'].map(k => `<button class="chip ${k} ${v.diff.includes(k) ? 'on' : ''}" data-diff="${k}">${DIFF[k]}</button>`).join('')}${all.some(r => r.legacy === 2) ? `<button class="chip B ${v.bedrock ? 'on' : ''}" id="bkchip"><b>B</b>Bedrock</button>` : ''}${all.some(r => r.video) ? `<button class="chip V ${v.video ? 'on' : ''}" id="vidchip">${I.play}Video</button>` : ''}
+            ${['E', 'M', 'H'].map(k => `<button class="chip ${k} ${v.diff.includes(k) ? 'on' : ''}" data-diff="${k}">${DIFF[k]}</button>`).join('')}${all.some(r => r.legacy === 2) ? `<button class="chip B ${v.bedrock ? 'on' : ''}" id="bkchip"><b>💎</b>Bedrock</button>` : ''}${all.some(r => r.video) ? `<button class="chip V ${v.video ? 'on' : ''}" id="vidchip">${I.play}Video</button>` : ''}
             <div class="sel"><select id="view">${[['topic', 'Topic'], ['difficulty', 'Difficulty'], ['time', 'By time'], ['bookmarked', 'Bookmarked'], ['missed', 'Missed']].map(([k, l]) => `<option value="${k}" ${v.view === k ? 'selected' : ''}>${l}</option>`).join('')}</select></div>
             <button class="btn" id="practice" ${shownIds.length ? '' : 'disabled'}>Practice</button></div>
           ${main}
