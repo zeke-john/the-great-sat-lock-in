@@ -398,3 +398,14 @@ figure svg{max-width:100%;height:auto}
 .bb-stem .md-body blockquote{margin:10px 0 10px 18px;padding-left:12px;border-left:3px solid #ccc}
 .bb-stem .md-body table{border-collapse:collapse;margin:10px 0}.bb-stem .md-body td,.bb-stem .md-body th{border:1px solid #333;padding:4px 10px}
 .bb-fig svg{max-width:100%;height:auto}
+.tile .pv.bk{background:#fff;color:var(--ink);font-size:10px;font-weight:900;line-height:1}
+.chip.B{display:inline-flex;align-items:center;gap:6px}
+.chip.B b{display:inline-grid;place-items:center;width:16px;height:16px;border-radius:4px;border:1.5px solid currentColor;font-size:10px;line-height:1}
+.chip.B.on{background:var(--ink);color:#fff}
+.bb-result .x .sol p{margin:0 0 10px}.bb-result .x .sol p:last-child{margin-bottom:0}
+.bb-result .x .sol ul,.bb-result .x .sol ol{margin:6px 0 10px 22px}
+.bb-result .x .sol .katex-display{margin:10px 0;overflow-x:auto}
+.bb-result .x .sol .src{margin-top:12px;font-size:12px;color:#666}
+.bb-result .x .sol .dz{margin:10px 0;border:1px solid #cfd8dc;border-radius:6px;overflow:hidden;background:#f6f8fa}
+.bb-result .x .sol .dzl{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#555;padding:5px 10px;border-bottom:1px solid #e0e4e8;background:#eef2f5}
+.bb-result .x .sol pre{margin:0;padding:10px 12px;font:14px/1.5 Menlo,Consolas,monospace;white-space:pre-wrap}

@@ -147,10 +147,10 @@ async function renderSection(sec, scrollTo) {
   const draw = () => {
     const solved = all.filter(x => x.status === 'solved').length;
     const R = 62, C = 2 * Math.PI * R;
-    const pass = r => (!v.diff.length || v.diff.includes(r.difficulty)) && (!v.video || r.video);
+    const pass = r => (!v.diff.length || v.diff.includes(r.difficulty)) && (!v.video || r.video) && (!v.bedrock || r.legacy === 2);
     const tile = r => { const b = r.bookmarked ? 'bm' : r.status === 'solved' ? 'ok' : r.status === 'missed' ? 'bad' : '';
       const ic = r.bookmarked ? ICONS.bm : r.status === 'solved' ? '<svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>' : '<svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>';
-      return `<a class="tile ${r.difficulty} ${r.video ? 'vid' : ''}" href="#/q/${r.id}" data-id="${r.id}" data-skill="${r.skill_cd}" title="${esc(r.skill)} ${r.ord} · ${DIFF[r.difficulty]}${r.video ? ' · video solution' : ''}${r.first_ms ? ' · ' + fmt(r.first_ms) : ''}">${r.ord}${r.video ? `<span class="pv">${I.play}</span>` : ''}${b ? `<span class="bd ${b}">${ic}</span>` : ''}</a>`; };
+      return `<a class="tile ${r.difficulty} ${r.video ? 'vid' : ''}" href="#/q/${r.id}" data-id="${r.id}" data-skill="${r.skill_cd}" title="${esc(r.skill)} ${r.ord} · ${DIFF[r.difficulty]}${r.legacy === 2 ? ' · Bedrock' : ''}${r.video ? ' · video solution' : ''}${r.first_ms ? ' · ' + fmt(r.first_ms) : ''}">${r.ord}${r.video ? `<span class="pv">${I.play}</span>` : (r.legacy === 2 ? `<span class="pv bk">B</span>` : '')}${b ? `<span class="bd ${b}">${ic}</span>` : ''}</a>`; };
     const skillBlock = (s, items, rowsByDiff) => {
       const tot = all.filter(r => r.skill_cd === s.cd), sv = tot.filter(r => r.status === 'solved').length;
       const body = rowsByDiff
@@ -176,7 +176,7 @@ async function renderSection(sec, scrollTo) {
       main = `<section class="dom"><h3>${v.view === 'bookmarked' ? 'Bookmarked problems' : 'Missed problems'}</h3>${blocks || `<div class="empty">${v.view === 'bookmarked' ? 'Nothing bookmarked yet. Use Mark for Review on a question.' : 'No missed problems. Nice.'}</div>`}</section>`;
     }
     app.innerHTML = header(sec) + `
-      <div class="hero"><div class="lbl">College Board question bank</div><div class="big">${all.length.toLocaleString()}<small>${sec === 'math' ? 'math problems' : 'reading &amp; writing problems'}</small></div><p>Every released ${NAME[sec]} question, numbered from easiest to hardest within each skill.</p></div>
+      <div class="hero"><div class="lbl">College Board question bank</div><div class="big">${all.length.toLocaleString()}<small>${sec === 'math' ? 'math problems' : 'reading &amp; writing problems'}</small></div><p>Every released ${NAME[sec]} question${sec === 'math' ? ' plus the Bedrock bank' : ''}, numbered from easiest to hardest within each skill.</p></div>
       <div class="wrap ${sbHidden ? 'nosb' : ''}">
         <aside class="sb">
           <div class="ring"><svg viewBox="0 0 150 150"><circle cx="75" cy="75" r="${R}" fill="none" stroke="#e4e2da" stroke-width="12"/><circle cx="75" cy="75" r="${R}" fill="none" stroke="#16a34a" stroke-width="12" stroke-linecap="round" stroke-dasharray="${(C * solved / all.length).toFixed(1)} ${C.toFixed(1)}" transform="rotate(-90 75 75)"/></svg><div class="v"><div><b>${solved}<small>/${all.length}</small></b><span>Solved</span></div></div></div>
@@ -187,7 +187,7 @@ async function renderSection(sec, scrollTo) {
         </aside>
         <main class="main">
           <div class="top"><button class="hamb" id="sb" title="Toggle sidebar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><h2>Problems</h2>
-            ${['E', 'M', 'H'].map(k => `<button class="chip ${k} ${v.diff.includes(k) ? 'on' : ''}" data-diff="${k}">${DIFF[k]}</button>`).join('')}${all.some(r => r.video) ? `<button class="chip V ${v.video ? 'on' : ''}" id="vidchip">${I.play}Video</button>` : ''}
+            ${['E', 'M', 'H'].map(k => `<button class="chip ${k} ${v.diff.includes(k) ? 'on' : ''}" data-diff="${k}">${DIFF[k]}</button>`).join('')}${all.some(r => r.legacy === 2) ? `<button class="chip B ${v.bedrock ? 'on' : ''}" id="bkchip"><b>B</b>Bedrock</button>` : ''}${all.some(r => r.video) ? `<button class="chip V ${v.video ? 'on' : ''}" id="vidchip">${I.play}Video</button>` : ''}
             <div class="sel"><select id="view">${[['topic', 'Topic'], ['difficulty', 'Difficulty'], ['time', 'By time'], ['bookmarked', 'Bookmarked'], ['missed', 'Missed']].map(([k, l]) => `<option value="${k}" ${v.view === k ? 'selected' : ''}>${l}</option>`).join('')}</select></div>
             <button class="btn" id="practice" ${shownIds.length ? '' : 'disabled'}>Practice</button></div>
           ${main}
@@ -196,7 +196,7 @@ async function renderSection(sec, scrollTo) {
     const re = () => { saveV(); draw(); };
     app.querySelectorAll('[data-diff]').forEach(b => b.onclick = () => { const k = b.dataset.diff; v.diff = v.diff.includes(k) ? v.diff.filter(x => x !== k) : [...v.diff, k]; re(); });
     app.querySelectorAll('[data-view]').forEach(b => b.onclick = () => { v.view = v.view === b.dataset.view ? 'topic' : b.dataset.view; re(); });
-    { const vc = $('#vidchip'); if (vc) vc.onclick = () => { v.video = !v.video; re(); }; }
+    { const vc = $('#vidchip'); if (vc) vc.onclick = () => { v.video = !v.video; re(); }; const bc = $('#bkchip'); if (bc) bc.onclick = () => { v.bedrock = !v.bedrock; re(); }; }
     $('#view').onchange = e => { v.view = e.target.value; re(); };
     $('#sb').onclick = () => { sbHidden = !sbHidden; localStorage.setItem('satbank:sb', sbHidden ? '0' : '1'); $('.wrap').classList.toggle('nosb', sbHidden); };
     app.querySelectorAll('[data-fold]').forEach(b => b.onclick = e => { e.preventDefault(); e.stopPropagation(); const cd = b.dataset.fold; v.folded = v.folded || []; const li = b.closest('li'); if (v.folded.includes(cd)) { v.folded = v.folded.filter(x => x !== cd); li.classList.remove('closed'); } else { v.folded.push(cd); li.classList.add('closed'); } saveV(); });

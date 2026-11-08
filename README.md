@@ -2,8 +2,8 @@
 
 A local SAT practice site built in one night (Nov 7–8, 2026) for a four-week push to 1400+.
 Every released College Board question (1,925 Math, 1,845 Reading & Writing) in a browse page
-styled like Bedrock, with a question screen that is a one-to-one copy of Bluebook, plus
-100 Bedrock problems that have video solutions.
+styled like Bedrock, with a question screen that is a one-to-one copy of Bluebook, plus the
+whole Bedrock math bank (1,006 problems with their written solutions, 100 of them with video).
 
 Runs on `localhost` only. Progress lives in a SQLite file on the machine.
 
@@ -37,8 +37,9 @@ SAT math reference sheet works). Optional: Bedrock videos, see `scripts/BEDROCK.
 - `build_db.py` — normalizes `data/raw/` into the `questions` table. Progress tables
   (`attempts`, `bookmarks`, `settings`) are never dropped. Numbers questions easiest → hardest
   within each skill. Calls `import_bedrock.py` at the end.
-- `import_bedrock.py` — adds Bedrock video problems from `data/raw/bedrock_videos.json`
-  (`legacy = 2`, `video` column) into the matching skill.
+- `import_bedrock.py` — adds the Bedrock problems from `data/raw/bedrock_problems.json`
+  (`legacy = 2`, `video` and `bedrock` columns) into the matching skill, rendering their
+  markdown solutions (KaTeX math, Desmos code blocks) into the explanation box.
 - `static/app.js` — vanilla JS single-page app. Routes: `#/`, `#/math`, `#/rw`, `#/plan`,
   `#/math/s/<skill>`, `#/math/d/<domain>`, `#/q/<id>`.
 - `static/styles.css` — Bedrock-style browse (cream background, 56px tiles with hard offset
@@ -64,7 +65,8 @@ SAT math reference sheet works). Optional: Bedrock videos, see `scripts/BEDROCK.
   every attempt with time and answer. Nothing is auto-revealed on reopening a question.
 - Status: solved once the latest attempt is correct, missed while it is wrong. "By time"
   uses the first attempt's time.
-- Gold tiles with a play badge = Bedrock problems with a video.
+- Bedrock problems carry a small B badge and have their own Bedrock chip filter; the ones
+  with a video are gold with a play badge and also match the Video chip.
 
 ## For future threads
 

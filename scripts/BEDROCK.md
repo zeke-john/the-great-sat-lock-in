@@ -22,3 +22,10 @@ uses the session cookie.
    `python3 import_bedrock.py` (it also runs automatically at the end of `build_db.py`).
 
 Imported questions get `legacy = 2`, a `video` column, gold tiles and the Video chip filter.
+
+## Written solutions (all problems)
+
+`GET /api/text-solution?id=<problemId>` (session cookie) returns `{markdown}`: `###` headings,
+`**bold**`, `$…$` / `$$…$$` math and ```` ```desmos ```` fenced blocks listing what to type into
+the calculator. A 404 means the problem has no written solution. `import_bedrock.py` converts
+that markdown to HTML; KaTeX renders the math in the browser.
