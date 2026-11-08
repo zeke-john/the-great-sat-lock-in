@@ -1,0 +1,10 @@
+# Copyrighted and personal data stays on the machine. Rebuild with scripts/ (see README).
+data/raw/
+data/sat.db
+data/*.db-*
+static/videos/*.mp4
+static/bedrock/
+static/ref.png
+server.log
+__pycache__/
+.DS_Store

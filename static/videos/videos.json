@@ -1,0 +1,1272 @@
+[
+ {
+  "id": "p_y7ngd621",
+  "title": "Plugging into a function",
+  "topic": "Functions",
+  "difficulty": "easy",
+  "label": "1",
+  "cb_qid": "p_y7ngd621",
+  "bedrock": "https://www.bedrockprep.com/problems/p_y7ngd621",
+  "file": "p_y7ngd621.mp4"
+ },
+ {
+  "id": "p_zvgz8tgf",
+  "title": "Intercepts of a function",
+  "topic": "Functions",
+  "difficulty": "easy",
+  "label": "2",
+  "cb_qid": "p_zvgz8tgf",
+  "bedrock": "https://www.bedrockprep.com/problems/p_zvgz8tgf",
+  "file": "p_zvgz8tgf.mp4"
+ },
+ {
+  "id": "p_pq39xxca",
+  "title": "Solving for x given y",
+  "topic": "Functions",
+  "difficulty": "easy",
+  "label": "3",
+  "cb_qid": "p_pq39xxca",
+  "bedrock": "https://www.bedrockprep.com/problems/p_pq39xxca",
+  "file": "p_pq39xxca.mp4"
+ },
+ {
+  "id": "p_2r2t4chl",
+  "title": "Table Regressions",
+  "topic": "Functions",
+  "difficulty": "easy",
+  "label": "4",
+  "cb_qid": "p_2r2t4chl",
+  "bedrock": "https://www.bedrockprep.com/problems/p_2r2t4chl",
+  "file": "p_2r2t4chl.mp4"
+ },
+ {
+  "id": "p_awjvaq9v",
+  "title": "Function Transformations",
+  "topic": "Functions",
+  "difficulty": "medium",
+  "label": "5",
+  "cb_qid": "p_awjvaq9v",
+  "bedrock": "https://www.bedrockprep.com/problems/p_awjvaq9v",
+  "file": "p_awjvaq9v.mp4"
+ },
+ {
+  "id": "p_xkm6flae",
+  "title": "Stretched & Compressed Functions",
+  "topic": "Functions",
+  "difficulty": "medium",
+  "label": "6",
+  "cb_qid": "p_xkm6flae",
+  "bedrock": "https://www.bedrockprep.com/problems/p_xkm6flae",
+  "file": "p_xkm6flae.mp4"
+ },
+ {
+  "id": "p_sfcbdayt",
+  "title": "Custom Regressions",
+  "topic": "Functions",
+  "difficulty": "hard",
+  "label": "7",
+  "cb_qid": "p_sfcbdayt",
+  "bedrock": "https://www.bedrockprep.com/problems/p_sfcbdayt",
+  "file": "p_sfcbdayt.mp4"
+ },
+ {
+  "id": "p_stzryb4d",
+  "title": "System of Equations",
+  "topic": "Systems of Equations & Inequalities",
+  "difficulty": "easy",
+  "label": "9",
+  "cb_qid": "p_stzryb4d",
+  "bedrock": "https://www.bedrockprep.com/problems/p_stzryb4d",
+  "file": "p_stzryb4d.mp4"
+ },
+ {
+  "id": "p_ikn6o792",
+  "title": "Lines in terms of real numbers",
+  "topic": "Systems of Equations & Inequalities",
+  "difficulty": "medium",
+  "label": "11",
+  "cb_qid": "p_ikn6o792",
+  "bedrock": "https://www.bedrockprep.com/problems/p_ikn6o792",
+  "file": "p_ikn6o792.mp4"
+ },
+ {
+  "id": "p_hnyvb0kp",
+  "title": "Inequalities",
+  "topic": "Systems of Equations & Inequalities",
+  "difficulty": "medium",
+  "label": "13",
+  "cb_qid": "p_hnyvb0kp",
+  "bedrock": "https://www.bedrockprep.com/problems/p_hnyvb0kp",
+  "file": "p_hnyvb0kp.mp4"
+ },
+ {
+  "id": "p_zvipno4k",
+  "title": "Consecutive odd/even integers",
+  "topic": "Systems of Equations & Inequalities",
+  "difficulty": "medium",
+  "label": "14",
+  "cb_qid": "p_zvipno4k",
+  "bedrock": "https://www.bedrockprep.com/problems/p_zvipno4k",
+  "file": "p_zvipno4k.mp4"
+ },
+ {
+  "id": "p_vheazeoq",
+  "title": "Systems of Inequalities",
+  "topic": "Systems of Equations & Inequalities",
+  "difficulty": "hard",
+  "label": "16",
+  "cb_qid": "p_vheazeoq",
+  "bedrock": "https://www.bedrockprep.com/problems/p_vheazeoq",
+  "file": "p_vheazeoq.mp4"
+ },
+ {
+  "id": "p_ydlb484q",
+  "title": "System of 1 Equation & 1 Inequality",
+  "topic": "Systems of Equations & Inequalities",
+  "difficulty": "hard",
+  "label": "17",
+  "cb_qid": "p_ydlb484q",
+  "bedrock": "https://www.bedrockprep.com/problems/p_ydlb484q",
+  "file": "p_ydlb484q.mp4"
+ },
+ {
+  "id": "p_a4vo3fxo",
+  "title": "Single Variable Equations",
+  "topic": "Algebra with Desmos",
+  "difficulty": "easy",
+  "label": "18",
+  "cb_qid": "p_a4vo3fxo",
+  "bedrock": "https://www.bedrockprep.com/problems/p_a4vo3fxo",
+  "file": "p_a4vo3fxo.mp4"
+ },
+ {
+  "id": "p_i6cux8o5",
+  "title": "Single Variable Equations with a Constant",
+  "topic": "Algebra with Desmos",
+  "difficulty": "medium",
+  "label": "19",
+  "cb_qid": "p_i6cux8o5",
+  "bedrock": "https://www.bedrockprep.com/problems/p_i6cux8o5",
+  "file": "p_i6cux8o5.mp4"
+ },
+ {
+  "id": "p_sv3uaqau",
+  "title": "Rearranging Terms",
+  "topic": "Algebra with Desmos",
+  "difficulty": "hard",
+  "label": "20",
+  "cb_qid": "p_sv3uaqau",
+  "bedrock": "https://www.bedrockprep.com/problems/p_sv3uaqau",
+  "file": "p_sv3uaqau.mp4"
+ },
+ {
+  "id": "p_19x17fhd",
+  "title": "Simple Equivalent Expressions",
+  "topic": "Algebra with Desmos",
+  "difficulty": "easy",
+  "label": "21",
+  "cb_qid": "p_19x17fhd",
+  "bedrock": "https://www.bedrockprep.com/problems/p_19x17fhd",
+  "file": "p_19x17fhd.mp4"
+ },
+ {
+  "id": "p_4llb5z9w",
+  "title": "Exotic Equivalent Expressions",
+  "topic": "Algebra with Desmos",
+  "difficulty": "easy",
+  "label": "22",
+  "cb_qid": "p_4llb5z9w",
+  "bedrock": "https://www.bedrockprep.com/problems/p_4llb5z9w",
+  "file": "p_4llb5z9w.mp4"
+ },
+ {
+  "id": "p_b5zk0b5u",
+  "title": "Number of Solutions",
+  "topic": "Algebra with Desmos",
+  "difficulty": "easy",
+  "label": "24",
+  "cb_qid": "p_b5zk0b5u",
+  "bedrock": "https://www.bedrockprep.com/problems/p_b5zk0b5u",
+  "file": "p_b5zk0b5u.mp4"
+ },
+ {
+  "id": "p_rwnbq7yc",
+  "title": "Equivalent for all x",
+  "topic": "Algebra with Desmos",
+  "difficulty": "medium",
+  "label": "25",
+  "cb_qid": "p_rwnbq7yc",
+  "bedrock": "https://www.bedrockprep.com/problems/p_rwnbq7yc",
+  "file": "p_rwnbq7yc.mp4"
+ },
+ {
+  "id": "p_jezcrrgc",
+  "title": "Slope",
+  "topic": "Linear Functions",
+  "difficulty": "medium",
+  "label": "26",
+  "cb_qid": "p_jezcrrgc",
+  "bedrock": "https://www.bedrockprep.com/problems/p_jezcrrgc",
+  "file": "p_jezcrrgc.mp4"
+ },
+ {
+  "id": "p_mkz1snys",
+  "title": "Linear Word Problems",
+  "topic": "Linear Functions",
+  "difficulty": "easy",
+  "label": "28",
+  "cb_qid": "p_mkz1snys",
+  "bedrock": "https://www.bedrockprep.com/problems/p_mkz1snys",
+  "file": "p_mkz1snys.mp4"
+ },
+ {
+  "id": "p_1lhant8w",
+  "title": "Interpreting Y-Intercept",
+  "topic": "Linear Functions",
+  "difficulty": "medium",
+  "label": "29",
+  "cb_qid": "p_1lhant8w",
+  "bedrock": "https://www.bedrockprep.com/problems/p_1lhant8w",
+  "file": "p_1lhant8w.mp4"
+ },
+ {
+  "id": "p_p0cdluhr",
+  "title": "Standard Form Equation",
+  "topic": "Linear Functions",
+  "difficulty": "easy",
+  "label": "30",
+  "cb_qid": "p_p0cdluhr",
+  "bedrock": "https://www.bedrockprep.com/problems/p_p0cdluhr",
+  "file": "p_p0cdluhr.mp4"
+ },
+ {
+  "id": "p_hpaf1dn3",
+  "title": "Constants in Linear Functions",
+  "topic": "Linear Functions",
+  "difficulty": "medium",
+  "label": "31",
+  "cb_qid": "p_hpaf1dn3",
+  "bedrock": "https://www.bedrockprep.com/problems/p_hpaf1dn3",
+  "file": "p_hpaf1dn3.mp4"
+ },
+ {
+  "id": "p_d0kkdx9h",
+  "title": "Standard Form - Infinite Solutions",
+  "topic": "Linear Functions",
+  "difficulty": "hard",
+  "label": "32",
+  "cb_qid": "p_d0kkdx9h",
+  "bedrock": "https://www.bedrockprep.com/problems/p_d0kkdx9h",
+  "file": "p_d0kkdx9h.mp4"
+ },
+ {
+  "id": "p_oso1gbgc",
+  "title": "Parallel Lines",
+  "topic": "Linear Functions",
+  "difficulty": "medium",
+  "label": "33",
+  "cb_qid": "p_oso1gbgc",
+  "bedrock": "https://www.bedrockprep.com/problems/p_oso1gbgc",
+  "file": "p_oso1gbgc.mp4"
+ },
+ {
+  "id": "p_2ybshqly",
+  "title": "Perpendicular Lines",
+  "topic": "Linear Functions",
+  "difficulty": "hard",
+  "label": "34",
+  "cb_qid": "p_2ybshqly",
+  "bedrock": "https://www.bedrockprep.com/problems/p_2ybshqly",
+  "file": "p_2ybshqly.mp4"
+ },
+ {
+  "id": "p_mdr6rhnq",
+  "title": "Percentages",
+  "topic": "Exponential Growth",
+  "difficulty": "easy",
+  "label": "35",
+  "cb_qid": "p_mdr6rhnq",
+  "bedrock": "https://www.bedrockprep.com/problems/p_mdr6rhnq",
+  "file": "p_mdr6rhnq.mp4"
+ },
+ {
+  "id": "p_3bky055s",
+  "title": "Reverse Percentage Example",
+  "topic": "Exponential Growth",
+  "difficulty": "medium",
+  "label": "36",
+  "cb_qid": "p_3bky055s",
+  "bedrock": "https://www.bedrockprep.com/problems/p_3bky055s",
+  "file": "p_3bky055s.mp4"
+ },
+ {
+  "id": "p_pycdzhd4",
+  "title": "Hard Percentages",
+  "topic": "Exponential Growth",
+  "difficulty": "hard",
+  "label": "37",
+  "cb_qid": "p_pycdzhd4",
+  "bedrock": "https://www.bedrockprep.com/problems/p_pycdzhd4",
+  "file": "p_pycdzhd4.mp4"
+ },
+ {
+  "id": "p_rtrep25a",
+  "title": "Exponent Rules",
+  "topic": "Exponential Growth",
+  "difficulty": "medium",
+  "label": "38",
+  "cb_qid": "p_rtrep25a",
+  "bedrock": "https://www.bedrockprep.com/problems/p_rtrep25a",
+  "file": "p_rtrep25a.mp4"
+ },
+ {
+  "id": "p_uvx9ronz",
+  "title": "Mixtures",
+  "topic": "Exponential Growth",
+  "difficulty": "medium",
+  "label": "39",
+  "cb_qid": "p_uvx9ronz",
+  "bedrock": "https://www.bedrockprep.com/problems/p_uvx9ronz",
+  "file": "p_uvx9ronz.mp4"
+ },
+ {
+  "id": "p_045a3gce",
+  "title": "Exponential vs Linear Growth",
+  "topic": "Exponential Growth",
+  "difficulty": "easy",
+  "label": "40",
+  "cb_qid": "p_045a3gce",
+  "bedrock": "https://www.bedrockprep.com/problems/p_045a3gce",
+  "file": "p_045a3gce.mp4"
+ },
+ {
+  "id": "p_4prfsnue",
+  "title": "Exponential Function Structure",
+  "topic": "Exponential Growth",
+  "difficulty": "medium",
+  "label": "41",
+  "cb_qid": "p_4prfsnue",
+  "bedrock": "https://www.bedrockprep.com/problems/p_4prfsnue",
+  "file": "p_4prfsnue.mp4"
+ },
+ {
+  "id": "p_espssew9",
+  "title": "Shifting Exponents",
+  "topic": "Exponential Growth",
+  "difficulty": "hard",
+  "label": "42",
+  "cb_qid": "p_espssew9",
+  "bedrock": "https://www.bedrockprep.com/problems/p_espssew9",
+  "file": "p_espssew9.mp4"
+ },
+ {
+  "id": "p_c44ogr4l",
+  "title": "Constant & Coefficient",
+  "topic": "Exponential Growth",
+  "difficulty": "medium",
+  "label": "43",
+  "cb_qid": "p_c44ogr4l",
+  "bedrock": "https://www.bedrockprep.com/problems/p_c44ogr4l",
+  "file": "p_c44ogr4l.mp4"
+ },
+ {
+  "id": "p_1fm2dl0z",
+  "title": "Fractional Exponents",
+  "topic": "Exponential Growth",
+  "difficulty": "hard",
+  "label": "45",
+  "cb_qid": "p_1fm2dl0z",
+  "bedrock": "https://www.bedrockprep.com/problems/p_1fm2dl0z",
+  "file": "p_1fm2dl0z.mp4"
+ },
+ {
+  "id": "p_hchqxz33",
+  "title": "Exponential Growth Rate",
+  "topic": "Exponential Growth",
+  "difficulty": "hard",
+  "label": "46",
+  "cb_qid": "p_hchqxz33",
+  "bedrock": "https://www.bedrockprep.com/problems/p_hchqxz33",
+  "file": "p_hchqxz33.mp4"
+ },
+ {
+  "id": "p_zeo2icbd",
+  "title": "Factoring",
+  "topic": "Quadratics & Polynomials",
+  "difficulty": "medium",
+  "label": "47",
+  "cb_qid": "p_zeo2icbd",
+  "bedrock": "https://www.bedrockprep.com/problems/p_zeo2icbd",
+  "file": "p_zeo2icbd.mp4"
+ },
+ {
+  "id": "p_a20osm9q",
+  "title": "Integer Factors",
+  "topic": "Quadratics & Polynomials",
+  "difficulty": "medium",
+  "label": "48",
+  "cb_qid": "p_a20osm9q",
+  "bedrock": "https://www.bedrockprep.com/problems/p_a20osm9q",
+  "file": "p_a20osm9q.mp4"
+ },
+ {
+  "id": "p_tahvl5qt",
+  "title": "Evaluating all Potential Factors",
+  "topic": "Quadratics & Polynomials",
+  "difficulty": "hard",
+  "label": "49",
+  "cb_qid": "p_tahvl5qt",
+  "bedrock": "https://www.bedrockprep.com/problems/p_tahvl5qt",
+  "file": "p_tahvl5qt.mp4"
+ },
+ {
+  "id": "p_0zeijfs2",
+  "title": "Analyzing Quadratic Solutions",
+  "topic": "Quadratics & Polynomials",
+  "difficulty": "medium",
+  "label": "53",
+  "cb_qid": "p_0zeijfs2",
+  "bedrock": "https://www.bedrockprep.com/problems/p_0zeijfs2",
+  "file": "p_0zeijfs2.mp4"
+ },
+ {
+  "id": "p_kqsi5fn2",
+  "title": "Number of Solutions to Quadratic",
+  "topic": "Quadratics & Polynomials",
+  "difficulty": "easy",
+  "label": "52",
+  "cb_qid": "p_kqsi5fn2",
+  "bedrock": "https://www.bedrockprep.com/problems/p_kqsi5fn2",
+  "file": "p_kqsi5fn2.mp4"
+ },
+ {
+  "id": "p_v3re8aj3",
+  "title": "System of Quadratic and Horizontal Line",
+  "topic": "Quadratics & Polynomials",
+  "difficulty": "medium",
+  "label": "54",
+  "cb_qid": "p_v3re8aj3",
+  "bedrock": "https://www.bedrockprep.com/problems/p_v3re8aj3",
+  "file": "p_v3re8aj3.mp4"
+ },
+ {
+  "id": "p_hwd3c4vd",
+  "title": "One Real Quadratic Solution",
+  "topic": "Quadratics & Polynomials",
+  "difficulty": "hard",
+  "label": "55",
+  "cb_qid": "p_hwd3c4vd",
+  "bedrock": "https://www.bedrockprep.com/problems/p_hwd3c4vd",
+  "file": "p_hwd3c4vd.mp4"
+ },
+ {
+  "id": "p_c07bxnm4",
+  "title": "2 Quadratics with No Solution",
+  "topic": "Quadratics & Polynomials",
+  "difficulty": "hard",
+  "label": "56",
+  "cb_qid": "p_c07bxnm4",
+  "bedrock": "https://www.bedrockprep.com/problems/p_c07bxnm4",
+  "file": "p_c07bxnm4.mp4"
+ },
+ {
+  "id": "p_swhb7ath",
+  "title": "Sum of Quadratic Solutions",
+  "topic": "Quadratics & Polynomials",
+  "difficulty": "medium",
+  "label": "57",
+  "cb_qid": "p_swhb7ath",
+  "bedrock": "https://www.bedrockprep.com/problems/p_swhb7ath",
+  "file": "p_swhb7ath.mp4"
+ },
+ {
+  "id": "p_f0awifmr",
+  "title": "Product of Quadratic Solutions",
+  "topic": "Quadratics & Polynomials",
+  "difficulty": "medium",
+  "label": "58",
+  "cb_qid": "p_f0awifmr",
+  "bedrock": "https://www.bedrockprep.com/problems/p_f0awifmr",
+  "file": "p_f0awifmr.mp4"
+ },
+ {
+  "id": "p_4xn8jmvn",
+  "title": "Interpreting Quadratic Functions",
+  "topic": "Quadratics & Polynomials",
+  "difficulty": "easy",
+  "label": "59",
+  "cb_qid": "p_4xn8jmvn",
+  "bedrock": "https://www.bedrockprep.com/problems/p_4xn8jmvn",
+  "file": "p_4xn8jmvn.mp4"
+ },
+ {
+  "id": "p_ps8sglh4",
+  "title": "Quadratic Applications",
+  "topic": "Quadratics & Polynomials",
+  "difficulty": "hard",
+  "label": "60",
+  "cb_qid": "p_ps8sglh4",
+  "bedrock": "https://www.bedrockprep.com/problems/p_ps8sglh4",
+  "file": "p_ps8sglh4.mp4"
+ },
+ {
+  "id": "p_wbsfrf26",
+  "title": "Factored Form",
+  "topic": "Quadratics & Polynomials",
+  "difficulty": "hard",
+  "label": "61",
+  "cb_qid": "p_wbsfrf26",
+  "bedrock": "https://www.bedrockprep.com/problems/p_wbsfrf26",
+  "file": "p_wbsfrf26.mp4"
+ },
+ {
+  "id": "p_gz7zs02o",
+  "title": "Vertex Form",
+  "topic": "Quadratics & Polynomials",
+  "difficulty": "hard",
+  "label": "62",
+  "cb_qid": "p_gz7zs02o",
+  "bedrock": "https://www.bedrockprep.com/problems/p_gz7zs02o",
+  "file": "p_gz7zs02o.mp4"
+ },
+ {
+  "id": "p_pzhhoid9",
+  "title": "Polynomial Solutions",
+  "topic": "Quadratics & Polynomials",
+  "difficulty": "easy",
+  "label": "64",
+  "cb_qid": "p_pzhhoid9",
+  "bedrock": "https://www.bedrockprep.com/problems/p_pzhhoid9",
+  "file": "p_pzhhoid9.mp4"
+ },
+ {
+  "id": "p_3bqj7wg9",
+  "title": "Polynomial Functions",
+  "topic": "Quadratics & Polynomials",
+  "difficulty": "hard",
+  "label": "65",
+  "cb_qid": "p_3bqj7wg9",
+  "bedrock": "https://www.bedrockprep.com/problems/p_3bqj7wg9",
+  "file": "p_3bqj7wg9.mp4"
+ },
+ {
+  "id": "p_l05qsgce",
+  "title": "Rational Functions",
+  "topic": "Quadratics & Polynomials",
+  "difficulty": "medium",
+  "label": "66",
+  "cb_qid": "p_l05qsgce",
+  "bedrock": "https://www.bedrockprep.com/problems/p_l05qsgce",
+  "file": "p_l05qsgce.mp4"
+ },
+ {
+  "id": "p_qfog5xev",
+  "title": "Angle Properties",
+  "topic": "Angles & Triangles",
+  "difficulty": "medium",
+  "label": "67",
+  "cb_qid": "p_qfog5xev",
+  "bedrock": "https://www.bedrockprep.com/problems/p_qfog5xev",
+  "file": "p_qfog5xev.mp4"
+ },
+ {
+  "id": "p_5jnqn0rw",
+  "title": "Radians",
+  "topic": "Angles & Triangles",
+  "difficulty": "easy",
+  "label": "69",
+  "cb_qid": "p_5jnqn0rw",
+  "bedrock": "https://www.bedrockprep.com/problems/p_5jnqn0rw",
+  "file": "p_5jnqn0rw.mp4"
+ },
+ {
+  "id": "p_mx39iu1p",
+  "title": "Unit Circle",
+  "topic": "Angles & Triangles",
+  "difficulty": "hard",
+  "label": "70",
+  "cb_qid": "p_mx39iu1p",
+  "bedrock": "https://www.bedrockprep.com/problems/p_mx39iu1p",
+  "file": "p_mx39iu1p.mp4"
+ },
+ {
+  "id": "p_2y8sarr3",
+  "title": "Sine, Cosine, Tangent",
+  "topic": "Angles & Triangles",
+  "difficulty": "easy",
+  "label": "72",
+  "cb_qid": "p_2y8sarr3",
+  "bedrock": "https://www.bedrockprep.com/problems/p_2y8sarr3",
+  "file": "p_2y8sarr3.mp4"
+ },
+ {
+  "id": "p_p56pb4lm",
+  "title": "Cofunction Identity Geometrically",
+  "topic": "Angles & Triangles",
+  "difficulty": "hard",
+  "label": "74",
+  "cb_qid": "p_p56pb4lm",
+  "bedrock": "https://www.bedrockprep.com/problems/p_p56pb4lm",
+  "file": "p_p56pb4lm.mp4"
+ },
+ {
+  "id": "p_8ly8ftow",
+  "title": "Cofunction Identity Algebraically",
+  "topic": "Angles & Triangles",
+  "difficulty": "medium",
+  "label": "75",
+  "cb_qid": "p_8ly8ftow",
+  "bedrock": "https://www.bedrockprep.com/problems/p_8ly8ftow",
+  "file": "p_8ly8ftow.mp4"
+ },
+ {
+  "id": "p_w91vpdo1",
+  "title": "Congruence",
+  "topic": "Angles & Triangles",
+  "difficulty": "easy",
+  "label": "76",
+  "cb_qid": "p_w91vpdo1",
+  "bedrock": "https://www.bedrockprep.com/problems/p_w91vpdo1",
+  "file": "p_w91vpdo1.mp4"
+ },
+ {
+  "id": "p_el869ua3",
+  "title": "Similarity",
+  "topic": "Angles & Triangles",
+  "difficulty": "easy",
+  "label": "77",
+  "cb_qid": "p_el869ua3",
+  "bedrock": "https://www.bedrockprep.com/problems/p_el869ua3",
+  "file": "p_el869ua3.mp4"
+ },
+ {
+  "id": "p_them9qci",
+  "title": "Proving Similarity & Congruence",
+  "topic": "Angles & Triangles",
+  "difficulty": "medium",
+  "label": "78",
+  "cb_qid": "p_them9qci",
+  "bedrock": "https://www.bedrockprep.com/problems/p_them9qci",
+  "file": "p_them9qci.mp4"
+ },
+ {
+  "id": "p_pt9m0h01",
+  "title": "Altitudes",
+  "topic": "Angles & Triangles",
+  "difficulty": "hard",
+  "label": "80",
+  "cb_qid": "p_pt9m0h01",
+  "bedrock": "https://www.bedrockprep.com/problems/p_pt9m0h01",
+  "file": "p_pt9m0h01.mp4"
+ },
+ {
+  "id": "p_37odyjuc",
+  "title": "Equilateral Triangles",
+  "topic": "Angles & Triangles",
+  "difficulty": "medium",
+  "label": "82",
+  "cb_qid": "p_37odyjuc",
+  "bedrock": "https://www.bedrockprep.com/problems/p_37odyjuc",
+  "file": "p_37odyjuc.mp4"
+ },
+ {
+  "id": "p_a55f8r2p",
+  "title": "Arc Length",
+  "topic": "Circles",
+  "difficulty": "easy",
+  "label": "83",
+  "cb_qid": "p_a55f8r2p",
+  "bedrock": "https://www.bedrockprep.com/problems/p_a55f8r2p",
+  "file": "p_a55f8r2p.mp4"
+ },
+ {
+  "id": "p_wdo7ycjz",
+  "title": "Inscribed Angle Theorem",
+  "topic": "Circles",
+  "difficulty": "medium",
+  "label": "84",
+  "cb_qid": "p_wdo7ycjz",
+  "bedrock": "https://www.bedrockprep.com/problems/p_wdo7ycjz",
+  "file": "p_wdo7ycjz.mp4"
+ },
+ {
+  "id": "p_7a3zxedl",
+  "title": "Line Tangent to Circle",
+  "topic": "Circles",
+  "difficulty": "medium",
+  "label": "85",
+  "cb_qid": "p_7a3zxedl",
+  "bedrock": "https://www.bedrockprep.com/problems/p_7a3zxedl",
+  "file": "p_7a3zxedl.mp4"
+ },
+ {
+  "id": "p_u7gn9ubh",
+  "title": "Quadrilateral from Tangent Lines",
+  "topic": "Circles",
+  "difficulty": "hard",
+  "label": "86",
+  "cb_qid": "p_u7gn9ubh",
+  "bedrock": "https://www.bedrockprep.com/problems/p_u7gn9ubh",
+  "file": "p_u7gn9ubh.mp4"
+ },
+ {
+  "id": "p_k581j57e",
+  "title": "Standard Form of a Circle",
+  "topic": "Circles",
+  "difficulty": "medium",
+  "label": "87",
+  "cb_qid": "p_k581j57e",
+  "bedrock": "https://www.bedrockprep.com/problems/p_k581j57e",
+  "file": "p_k581j57e.mp4"
+ },
+ {
+  "id": "p_za0glsqx",
+  "title": "General Form of a Circle",
+  "topic": "Circles",
+  "difficulty": "medium",
+  "label": "89",
+  "cb_qid": "p_za0glsqx",
+  "bedrock": "https://www.bedrockprep.com/problems/p_za0glsqx",
+  "file": "p_za0glsqx.mp4"
+ },
+ {
+  "id": "p_3h457p8p",
+  "title": "Circle with Constants",
+  "topic": "Circles",
+  "difficulty": "hard",
+  "label": "90",
+  "cb_qid": "p_3h457p8p",
+  "bedrock": "https://www.bedrockprep.com/problems/p_3h457p8p",
+  "file": "p_3h457p8p.mp4"
+ },
+ {
+  "id": "p_21jqre78",
+  "title": "Perimeter",
+  "topic": "Area, Surface Area, Volume",
+  "difficulty": "easy",
+  "label": "92",
+  "cb_qid": "p_21jqre78",
+  "bedrock": "https://www.bedrockprep.com/problems/p_21jqre78",
+  "file": "p_21jqre78.mp4"
+ },
+ {
+  "id": "p_r9w0px7p",
+  "title": "Squares & Circles",
+  "topic": "Area, Surface Area, Volume",
+  "difficulty": "medium",
+  "label": "94",
+  "cb_qid": "p_r9w0px7p",
+  "bedrock": "https://www.bedrockprep.com/problems/p_r9w0px7p",
+  "file": "p_r9w0px7p.mp4"
+ },
+ {
+  "id": "p_185hoz5f",
+  "title": "Area from Points",
+  "topic": "Area, Surface Area, Volume",
+  "difficulty": "hard",
+  "label": "95",
+  "cb_qid": "p_185hoz5f",
+  "bedrock": "https://www.bedrockprep.com/problems/p_185hoz5f",
+  "file": "p_185hoz5f.mp4"
+ },
+ {
+  "id": "p_8tslth44",
+  "title": "Volume",
+  "topic": "Area, Surface Area, Volume",
+  "difficulty": "easy",
+  "label": "96",
+  "cb_qid": "p_8tslth44",
+  "bedrock": "https://www.bedrockprep.com/problems/p_8tslth44",
+  "file": "p_8tslth44.mp4"
+ },
+ {
+  "id": "p_4h2xj80k",
+  "title": "Density",
+  "topic": "Area, Surface Area, Volume",
+  "difficulty": "easy",
+  "label": "97",
+  "cb_qid": "p_4h2xj80k",
+  "bedrock": "https://www.bedrockprep.com/problems/p_4h2xj80k",
+  "file": "p_4h2xj80k.mp4"
+ },
+ {
+  "id": "p_qxe7ize9",
+  "title": "Scaling Figures",
+  "topic": "Area, Surface Area, Volume",
+  "difficulty": "medium",
+  "label": "98",
+  "cb_qid": "p_qxe7ize9",
+  "bedrock": "https://www.bedrockprep.com/problems/p_qxe7ize9",
+  "file": "p_qxe7ize9.mp4"
+ },
+ {
+  "id": "p_0806tym6",
+  "title": "Prism Surface Area",
+  "topic": "Area, Surface Area, Volume",
+  "difficulty": "hard",
+  "label": "99",
+  "cb_qid": "p_0806tym6",
+  "bedrock": "https://www.bedrockprep.com/problems/p_0806tym6",
+  "file": "p_0806tym6.mp4"
+ },
+ {
+  "id": "p_g48l7edp",
+  "title": "Similar 3D Figures",
+  "topic": "Area, Surface Area, Volume",
+  "difficulty": "hard",
+  "label": "100",
+  "cb_qid": "p_g48l7edp",
+  "bedrock": "https://www.bedrockprep.com/problems/p_g48l7edp",
+  "file": "p_g48l7edp.mp4"
+ },
+ {
+  "id": "p_wx0t4ayp",
+  "title": "Sphere Enclosures",
+  "topic": "Area, Surface Area, Volume",
+  "difficulty": "hard",
+  "label": "101",
+  "cb_qid": "p_wx0t4ayp",
+  "bedrock": "https://www.bedrockprep.com/problems/p_wx0t4ayp",
+  "file": "p_wx0t4ayp.mp4"
+ },
+ {
+  "id": "p_lkqcamoi",
+  "title": "Pyramids & Surface Area",
+  "topic": "Area, Surface Area, Volume",
+  "difficulty": "hard",
+  "label": "102",
+  "cb_qid": "p_lkqcamoi",
+  "bedrock": "https://www.bedrockprep.com/problems/p_lkqcamoi",
+  "file": "p_lkqcamoi.mp4"
+ },
+ {
+  "id": "p_lmjfq1qz",
+  "title": "Rate of change",
+  "topic": "Rates & Units",
+  "difficulty": "easy",
+  "label": "104",
+  "cb_qid": "p_lmjfq1qz",
+  "bedrock": "https://www.bedrockprep.com/problems/p_lmjfq1qz",
+  "file": "p_lmjfq1qz.mp4"
+ },
+ {
+  "id": "p_y33zvvtj",
+  "title": "Ratios",
+  "topic": "Rates & Units",
+  "difficulty": "medium",
+  "label": "105",
+  "cb_qid": "p_y33zvvtj",
+  "bedrock": "https://www.bedrockprep.com/problems/p_y33zvvtj",
+  "file": "p_y33zvvtj.mp4"
+ },
+ {
+  "id": "p_17dls4r5",
+  "title": "Fill x times",
+  "topic": "Rates & Units",
+  "difficulty": "hard",
+  "label": "106",
+  "cb_qid": "p_17dls4r5",
+  "bedrock": "https://www.bedrockprep.com/problems/p_17dls4r5",
+  "file": "p_17dls4r5.mp4"
+ },
+ {
+  "id": "p_l09j2ynl",
+  "title": "Square units",
+  "topic": "Rates & Units",
+  "difficulty": "medium",
+  "label": "108",
+  "cb_qid": "p_l09j2ynl",
+  "bedrock": "https://www.bedrockprep.com/problems/p_l09j2ynl",
+  "file": "p_l09j2ynl.mp4"
+ },
+ {
+  "id": "p_37te1qdu",
+  "title": "Unit Conversion with Rates",
+  "topic": "Rates & Units",
+  "difficulty": "hard",
+  "label": "110",
+  "cb_qid": "p_37te1qdu",
+  "bedrock": "https://www.bedrockprep.com/problems/p_37te1qdu",
+  "file": "p_37te1qdu.mp4"
+ },
+ {
+  "id": "p_iyf279g4",
+  "title": "Scatterplots",
+  "topic": "Statistics",
+  "difficulty": "easy",
+  "label": "114",
+  "cb_qid": "p_iyf279g4",
+  "bedrock": "https://www.bedrockprep.com/problems/p_iyf279g4",
+  "file": "p_iyf279g4.mp4"
+ },
+ {
+  "id": "p_c0dsrwbg",
+  "title": "Conditional Probability",
+  "topic": "Statistics",
+  "difficulty": "medium",
+  "label": "116",
+  "cb_qid": "p_c0dsrwbg",
+  "bedrock": "https://www.bedrockprep.com/problems/p_c0dsrwbg",
+  "file": "p_c0dsrwbg.mp4"
+ },
+ {
+  "id": "p_xz37n8l5",
+  "title": "Probability with Percentages",
+  "topic": "Statistics",
+  "difficulty": "hard",
+  "label": "117",
+  "cb_qid": "p_xz37n8l5",
+  "bedrock": "https://www.bedrockprep.com/problems/p_xz37n8l5",
+  "file": "p_xz37n8l5.mp4"
+ },
+ {
+  "id": "p_2zy4v8w0",
+  "title": "Mean, Median, Range",
+  "topic": "Statistics",
+  "difficulty": "easy",
+  "label": "118",
+  "cb_qid": "p_2zy4v8w0",
+  "bedrock": "https://www.bedrockprep.com/problems/p_2zy4v8w0",
+  "file": "p_2zy4v8w0.mp4"
+ },
+ {
+  "id": "p_xsfe9i8g",
+  "title": "Mean vs. Median",
+  "topic": "Statistics",
+  "difficulty": "medium",
+  "label": "119",
+  "cb_qid": "p_xsfe9i8g",
+  "bedrock": "https://www.bedrockprep.com/problems/p_xsfe9i8g",
+  "file": "p_xsfe9i8g.mp4"
+ },
+ {
+  "id": "p_xkd6c1ko",
+  "title": "Mean Analysis",
+  "topic": "Statistics",
+  "difficulty": "medium",
+  "label": "120",
+  "cb_qid": "p_xkd6c1ko",
+  "bedrock": "https://www.bedrockprep.com/problems/p_xkd6c1ko",
+  "file": "p_xkd6c1ko.mp4"
+ },
+ {
+  "id": "p_c28sb7be",
+  "title": "Standard Deviation",
+  "topic": "Statistics",
+  "difficulty": "medium",
+  "label": "121",
+  "cb_qid": "p_c28sb7be",
+  "bedrock": "https://www.bedrockprep.com/problems/p_c28sb7be",
+  "file": "p_c28sb7be.mp4"
+ },
+ {
+  "id": "p_ejb2spp4",
+  "title": "Scaling Data",
+  "topic": "Statistics",
+  "difficulty": "medium",
+  "label": "122",
+  "cb_qid": "p_ejb2spp4",
+  "bedrock": "https://www.bedrockprep.com/problems/p_ejb2spp4",
+  "file": "p_ejb2spp4.mp4"
+ },
+ {
+  "id": "p_kvhenc2s",
+  "title": "Box Plots",
+  "topic": "Statistics",
+  "difficulty": "easy",
+  "label": "123",
+  "cb_qid": "p_kvhenc2s",
+  "bedrock": "https://www.bedrockprep.com/problems/p_kvhenc2s",
+  "file": "p_kvhenc2s.mp4"
+ },
+ {
+  "id": "p_43y393z1",
+  "title": "Sampling",
+  "topic": "Statistics",
+  "difficulty": "medium",
+  "label": "124",
+  "cb_qid": "p_43y393z1",
+  "bedrock": "https://www.bedrockprep.com/problems/p_43y393z1",
+  "file": "p_43y393z1.mp4"
+ },
+ {
+  "id": "p_3o6nm74v",
+  "title": "Margin of Error",
+  "topic": "Statistics",
+  "difficulty": "medium",
+  "label": "125",
+  "cb_qid": "p_3o6nm74v",
+  "bedrock": "https://www.bedrockprep.com/problems/p_3o6nm74v",
+  "file": "p_3o6nm74v.mp4"
+ },
+ {
+  "id": "desmos001",
+  "title": "Table Regressions",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos001",
+  "file": "desmos001.mp4"
+ },
+ {
+  "id": "desmos002",
+  "title": "Intercepts of a function",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos002",
+  "file": "desmos002.mp4"
+ },
+ {
+  "id": "desmos003",
+  "title": "Solving for x given y",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos003",
+  "file": "desmos003.mp4"
+ },
+ {
+  "id": "desmos004",
+  "title": "Polynomial Intersections",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos004",
+  "file": "desmos004.mp4"
+ },
+ {
+  "id": "desmos007",
+  "title": "Number of Solutions",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos007",
+  "file": "desmos007.mp4"
+ },
+ {
+  "id": "desmos006",
+  "title": "System of Equations",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos006",
+  "file": "desmos006.mp4"
+ },
+ {
+  "id": "desmos009",
+  "title": "Single Variable Equations",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos009",
+  "file": "desmos009.mp4"
+ },
+ {
+  "id": "desmos008",
+  "title": "System of Quadratic and Horizontal Line",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos008",
+  "file": "desmos008.mp4"
+ },
+ {
+  "id": "desmos010",
+  "title": "Single Variable Equations with a Constant",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos010",
+  "file": "desmos010.mp4"
+ },
+ {
+  "id": "desmos005",
+  "title": "Vertical & Horizontal Translations",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos005",
+  "file": "desmos005.mp4"
+ },
+ {
+  "id": "desmos011",
+  "title": "Lines in terms of real numbers",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos011",
+  "file": "desmos011.mp4"
+ },
+ {
+  "id": "desmos012",
+  "title": "Systems of Inequalities",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos012",
+  "file": "desmos012.mp4"
+ },
+ {
+  "id": "desmos013",
+  "title": "Equivalent Expressions",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos013",
+  "file": "desmos013.mp4"
+ },
+ {
+  "id": "desmos014",
+  "title": "Equivalent Expressions with y",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos014",
+  "file": "desmos014.mp4"
+ },
+ {
+  "id": "desmos017",
+  "title": "System of 1 Equation & 1 Inequality",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos017",
+  "file": "desmos017.mp4"
+ },
+ {
+  "id": "desmos019",
+  "title": "Factored Form",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos019",
+  "file": "desmos019.mp4"
+ },
+ {
+  "id": "desmos021",
+  "title": "In Terms Of",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos021",
+  "file": "desmos021.mp4"
+ },
+ {
+  "id": "desmos020",
+  "title": "Integer Factors",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos020",
+  "file": "desmos020.mp4"
+ },
+ {
+  "id": "desmos016",
+  "title": "Infinite Solution Regressions",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos016",
+  "file": "desmos016.mp4"
+ },
+ {
+  "id": "desmos022",
+  "title": "Percentages",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos022",
+  "file": "desmos022.mp4"
+ },
+ {
+  "id": "desmos018",
+  "title": "Exponent Rules",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos018",
+  "file": "desmos018.mp4"
+ },
+ {
+  "id": "desmos015",
+  "title": "Custom Regressions",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos015",
+  "file": "desmos015.mp4"
+ },
+ {
+  "id": "desmos023",
+  "title": "Mean, Median, Range",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos023",
+  "file": "desmos023.mp4"
+ },
+ {
+  "id": "desmos024",
+  "title": "Mean of a Data Set",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos024",
+  "file": "desmos024.mp4"
+ },
+ {
+  "id": "desmos025",
+  "title": "Sine of a Special Angle",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos025",
+  "file": "desmos025.mp4"
+ },
+ {
+  "id": "desmos026",
+  "title": "Find center or radius of circle",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos026",
+  "file": "desmos026.mp4"
+ },
+ {
+  "id": "desmos027",
+  "title": "The Ultimate Regression Problem",
+  "topic": "Desmos guide",
+  "difficulty": "",
+  "label": null,
+  "cb_qid": null,
+  "bedrock": "https://www.bedrockprep.com/problems/desmos027",
+  "file": "desmos027.mp4"
+ }
+]
