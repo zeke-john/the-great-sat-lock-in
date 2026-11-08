@@ -65,7 +65,7 @@ SAT math reference sheet works). Optional: Bedrock videos, see `scripts/BEDROCK.
   every attempt with time and answer. Nothing is auto-revealed on reopening a question.
 - Status: solved once the latest attempt is correct, missed while it is wrong. "By time"
   uses the first attempt's time.
-- Bedrock problems carry a small B badge and have their own Bedrock chip filter; the ones
+- Bedrock problems carry a small 🪨 badge and have their own 🪨 Bedrock chip filter; the ones
   with a video are gold with a play badge and also match the Video chip.
 
 ## For future threads
