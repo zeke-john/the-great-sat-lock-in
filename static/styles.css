@@ -412,3 +412,12 @@ figure svg{max-width:100%;height:auto}
 
 /* College Board screen-reader-only text (e.g. "blank" after ______) */
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* College Board question markup that Bluebook styles and we did not */
+.bb .italic{font-style:italic}
+.bb table{border-collapse:collapse}
+.bb th,.bb td{border:1px solid #1e1e1e;padding:5px 12px;text-align:center;vertical-align:middle}
+.bb th{font-weight:700}
+.bb caption{padding-bottom:6px}
+.bb .para_center,.bb .standalone_statement,.bb [class~="align:center"]{text-align:center}
+.bb .standalone_statement{margin:12px 0}
