@@ -200,7 +200,7 @@ math{font-size:1.1em}
 .bb-pane.left:after{content:"";position:absolute;top:50%;right:-4px;width:6px;height:44px;border-radius:3px;background:#1e1e1e;transform:translateY(-50%);opacity:.0}
 .bb-passage{font-size:16px;line-height:1.75;max-width:640px}
 .bb-passage p{margin:0 0 16px}
-.bb-passage mark{background:#fff27a;padding:1px 0;cursor:pointer}
+
 .bb-single{flex:1;overflow:auto;padding:30px 0 60px}
 .bb-single .bb-q{max-width:720px;margin:0 auto;padding:0 28px}
 .bb-qbar{display:flex;align-items:stretch;background:var(--bbgray);border-bottom:1px solid var(--bbline);height:34px;margin-bottom:18px}
@@ -421,3 +421,20 @@ figure svg{max-width:100%;height:auto}
 .bb caption{padding-bottom:6px}
 .bb .para_center,.bb .standalone_statement,.bb [class~="align:center"]{text-align:center}
 .bb .standalone_statement{margin:12px 0}
+
+/* Highlight color bar (Bluebook annotate) */
+.hlbar{position:fixed;z-index:80;display:flex;align-items:center;gap:8px;padding:6px 10px;background:#fff;border:1px solid #bdbdbd;border-radius:999px;box-shadow:0 3px 12px rgba(0,0,0,.2);font-family:Roboto,Arial,sans-serif}
+.hlbar .c{width:34px;height:34px;border-radius:50%;border:1.5px solid #9a9a9a;display:grid;place-items:center;color:#3a3a1a;cursor:pointer;padding:0}
+.hlbar .c.y{background:#f5e58f;border-color:#1e1e1e}
+.hlbar .c.b{background:#dfe6f4}
+.hlbar .c.p{background:#f4dced}
+.hlbar .c svg{width:16px;height:16px}
+.hlbar .sep{width:1px;height:26px;background:#cfcfcf;margin:0 2px;display:none}
+.hlbar .t{width:34px;height:34px;border-radius:50%;border:1.5px solid #9a9a9a;background:#fff;display:none;place-items:center;color:#1e1e1e;cursor:pointer;padding:0}
+.hlbar .t svg{width:17px;height:17px}
+.hlbar.has-mark .sep,.hlbar.has-mark .t{display:grid}
+.hlbar.has-mark .sep{display:block}
+.bb mark.hl{padding:1px 0;color:inherit;cursor:pointer}
+.bb mark.hl.y{background:#f5e05a}
+.bb mark.hl.b{background:#cfe0f7}
+.bb mark.hl.p{background:#f6d3ea}

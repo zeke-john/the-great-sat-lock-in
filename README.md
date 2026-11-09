@@ -61,7 +61,10 @@ SAT math reference sheet works). Optional: Bedrock videos, see `scripts/BEDROCK.
   windows; with the calculator open the question column starts just right of the timer colon
   and does not move when the window is dragged. Cross-out (ABC) is on by default. **No keyboard
   shortcuts on this screen, on purpose.** Check Answer stops the timer and shows the result,
-  explanation and, for Bedrock problems, the video. "History · n" in the question bar lists
+  explanation and, for Bedrock problems, the video. Highlighting (Reading & Writing): select text in
+  the passage or the question and a small color bar pops up over the selection (yellow, blue, pink,
+  like Bluebook's annotate bar); click a color to highlight, click a highlight to recolor or remove it.
+  Highlights are saved per question in the browser. "History · n" in the question bar lists
   every attempt with time and answer. Nothing is auto-revealed on reopening a question.
 - Status: solved once the latest attempt is correct, missed while it is wrong. "By time"
   uses the first attempt's time.

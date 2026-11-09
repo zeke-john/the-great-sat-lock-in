@@ -95,6 +95,65 @@ function floatEl(kind) {
 FLOAT.sync = () => { const el = FLOAT.els.calc, cols = document.querySelector('.bb-cols'); if (cols) cols.classList.toggle('calc-open', !!el && el.style.display !== 'none' && !el.classList.contains('big')); };
 function floatShow(kind, on) { const el = floatEl(kind); el.style.display = on ? 'flex' : 'none'; if (on) el.style.zIndex = ++FLOAT.z; if (FLOAT.onchange) FLOAT.onchange(); FLOAT.sync(); }
 
+
+/* Highlights: Bluebook-style color bar that pops up over a text selection in the passage or question. */
+const HL = { bar: null, range: null, mark: null, onapply: null };
+const HL_COLORS = ['y', 'b', 'p'];
+function hlBar() {
+  if (HL.bar) return HL.bar;
+  const b = document.createElement('div'); b.className = 'hlbar'; b.style.display = 'none';
+  b.innerHTML = HL_COLORS.map(c => `<button class="c ${c}" data-hl="${c}" aria-label="Highlight">${c === 'y' ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3.5s-5.5 6.2-5.5 10a5.5 5.5 0 0 0 11 0c0-3.8-5.5-10-5.5-10z"/></svg>' : ''}</button>`).join('')
+    + `<span class="sep"></span><button class="t" data-hl="del" aria-label="Remove highlight"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></button>`;
+  b.addEventListener('mousedown', e => e.preventDefault());
+  b.addEventListener('click', e => { const k = e.target.closest('[data-hl]'); if (!k) return; hlApply(k.dataset.hl); });
+  document.body.appendChild(b); HL.bar = b; return b;
+}
+function hlHide() { if (HL.bar) HL.bar.style.display = 'none'; HL.range = null; HL.mark = null; }
+function hlShowAt(rect, hasMark) {
+  const b = hlBar(); b.classList.toggle('has-mark', !!hasMark); b.style.display = 'flex';
+  const w = b.offsetWidth, h = b.offsetHeight;
+  let x = rect.left + rect.width / 2 - w / 2; x = Math.max(8, Math.min(window.innerWidth - w - 8, x));
+  let y = rect.top - h - 10; if (y < 76) y = rect.bottom + 10;
+  b.style.left = x + 'px'; b.style.top = y + 'px';
+}
+function hlWrap(range, cls) {
+  // Wrap every text node the range touches in <mark class="hl cls">, splitting the end text nodes first.
+  if (range.endContainer.nodeType === 3 && range.endOffset < range.endContainer.length) range.endContainer.splitText(range.endOffset);
+  if (range.startContainer.nodeType === 3 && range.startOffset > 0) { const t = range.startContainer.splitText(range.startOffset); range.setStart(t, 0); }
+  const root = range.commonAncestorContainer; const walker = document.createTreeWalker(root.nodeType === 3 ? root.parentNode : root, NodeFilter.SHOW_TEXT);
+  const nodes = []; let n; while ((n = walker.nextNode())) if (range.intersectsNode(n) && n.nodeValue.trim()) nodes.push(n);
+  nodes.forEach(t => { const pm = t.parentNode.closest && t.parentNode.closest('mark.hl'); if (pm && pm.textContent === t.nodeValue) { pm.className = 'hl ' + cls; return; } const m = document.createElement('mark'); m.className = 'hl ' + cls; t.parentNode.insertBefore(m, t); m.appendChild(t); });
+}
+function hlApply(what) {
+  if (what === 'del') { if (HL.mark) { HL.mark.replaceWith(...HL.mark.childNodes); } }
+  else if (HL.mark && !HL.range) HL.mark.className = 'hl ' + what;
+  else if (HL.range) hlWrap(HL.range, what);
+  window.getSelection()?.removeAllRanges(); hlHide(); if (HL.onapply) HL.onapply();
+}
+function hlWatch(zones, onapply) {
+  // zones: selector for the elements whose text can be highlighted. Returns a cleanup fn.
+  HL.onapply = onapply;
+  const inZone = node => { const el = node && (node.nodeType === 3 ? node.parentNode : node); return !!(el && el.closest && el.closest(zones)); };
+  const up = e => {
+    if (e.target.closest && e.target.closest('.hlbar')) return;
+    setTimeout(() => {
+      const s = window.getSelection();
+      if (s && !s.isCollapsed && inZone(s.anchorNode) && inZone(s.focusNode)) {
+        const r = s.getRangeAt(0); const rect = r.getBoundingClientRect(); if (!rect.width && !rect.height) return hlHide();
+        HL.range = r.cloneRange(); HL.mark = (r.commonAncestorContainer.nodeType === 3 ? r.commonAncestorContainer.parentNode : r.commonAncestorContainer).closest('mark.hl');
+        hlShowAt(rect, false); return;
+      }
+      const m = e.target.closest && e.target.closest('mark.hl');
+      if (m && inZone(m)) { HL.range = null; HL.mark = m; hlShowAt(m.getBoundingClientRect(), true); return; }
+      hlHide();
+    }, 0);
+  };
+  const down = e => { if (!(e.target.closest && e.target.closest('.hlbar'))) hlHide(); };
+  const sc = () => hlHide();
+  document.addEventListener('mouseup', up); document.addEventListener('mousedown', down); document.addEventListener('scroll', sc, true); window.addEventListener('resize', sc);
+  return () => { document.removeEventListener('mouseup', up); document.removeEventListener('mousedown', down); document.removeEventListener('scroll', sc, true); window.removeEventListener('resize', sc); hlHide(); HL.onapply = null; };
+}
+
 async function route() {
   if (!META) META = await api('/api/meta');
   cleanup.forEach(fn => fn()); cleanup = [];
@@ -236,16 +295,19 @@ async function renderProblem(id) {
   const tick = setInterval(() => { if (running) { const n = performance.now(); elapsed += n - last; last = n; const t = $('#bbtime'); if (t && !hidden) t.textContent = fmt(elapsed); } }, 250);
   cleanup.push(() => clearInterval(tick));
   let selected = null, struck = new Set(), abc = localStorage.getItem('satbank:abc') !== '0', checked = null, bookmarked = q.bookmarked, pop = null, paused = false, showHist = false; // pop: 'nav' | 'more' | 'dir'
-  let passageHTML = q.stimulus || '';
+  const hlKey = 'satbank:hl:' + id; let saved = {}; try { saved = JSON.parse(localStorage.getItem(hlKey) || '{}'); } catch {}
+  let passageHTML = saved.passage || q.stimulus || '', stemHTML = saved.stem || q.stem;
+  const saveHL = () => { const pas = $('#passage'), st = $('.bb-stem'); if (pas) passageHTML = pas.innerHTML; if (st) stemHTML = st.innerHTML; const has = /class="hl /.test(passageHTML + stemHTML); if (has) localStorage.setItem(hlKey, JSON.stringify({ passage: passageHTML, stem: stemHTML })); else localStorage.removeItem(hlKey); };
 
   const opt = o => `<li class="bb-opt"><button class="o ${selected === o.label ? 'sel' : ''} ${struck.has(o.label) ? 'struck' : ''} ${checked ? (q.correct.includes(o.label) ? 'right' : selected === o.label ? 'wrong' : '') : ''}" data-opt="${o.label}" ${checked ? 'disabled' : ''}><span class="l">${o.label}</span><span class="b">${o.html}</span></button><button class="x ${struck.has(o.label) ? 'undo' : ''}" data-strike="${o.label}" aria-label="Cross out ${o.label}">${struck.has(o.label) ? 'Undo' : o.label}</button></li>`;
 
+  if (!isMath) cleanup.push(hlWatch('#passage, .bb-stem', saveHL));
   const draw = () => {
     const qblock = `
       <div class="bb-qbar"><span class="n">${idx + 1}</span><button class="mark ${bookmarked ? 'on' : ''}" id="mark">${I.bm} Mark for Review</button>${q.type === 'mcq' ? `<button class="abc ${abc ? 'on' : ''}" id="abc" title="Cross out answer choices">ABC</button>` : ''}${q.attempts.length ? `<button class="hist ${showHist ? 'on' : ''}" id="hist">${I.clock} History · ${q.attempts.length}</button>` : ''}</div>
       ${showHist && q.attempts.length ? histHTML() : ''}
       ${isMath && q.stimulus ? `<div class="bb-stim">${q.stimulus}</div>` : ''}
-      <div class="bb-stem ${isMath ? '' : 'serif'}">${q.stem}</div>
+      <div class="bb-stem ${isMath ? '' : 'serif'}">${isMath ? q.stem : stemHTML}</div>
       ${q.type === 'mcq' ? `<ul class="bb-opts ${abc ? 'abc-on' : ''} ${isMath ? '' : 'serif'}">${q.options.map(opt).join('')}</ul>`
         : `<div class="bb-spr"><input id="spr" autocomplete="off" ${checked ? 'disabled' : ''} value="${esc(selected || '')}"><div class="pv">Answer Preview:<b id="sprprev">${preview(selected)}</b></div></div>`}
       ${!checked ? `<div class="bb-check"><button class="bb-btn outline" id="check" ${selected ? '' : 'disabled'}>Check Answer</button></div>` : ''}
@@ -290,11 +352,9 @@ async function renderProblem(id) {
   };
   const next = () => { if (!checked && selected) return check(); if (nextId) go(nextId); else location.hash = listHash; };
   function highlight() {
-    const s = window.getSelection(); const pas = $('#passage');
-    if (!pas || !s || s.isCollapsed || !pas.contains(s.anchorNode)) { toast('Select text in the passage first'); return; }
-    const range = s.getRangeAt(0); const mark = document.createElement('mark');
-    try { range.surroundContents(mark); } catch { mark.appendChild(range.extractContents()); range.insertNode(mark); }
-    s.removeAllRanges(); passageHTML = pas.innerHTML;
+    const s = window.getSelection();
+    if (!s || s.isCollapsed) { toast('Make a selection first.'); return; }
+    document.dispatchEvent(new MouseEvent('mouseup', { bubbles: true }));
   }
   function wire() {
     const on = (sel, fn) => { const el = $(sel); if (el) el.onclick = fn; };
@@ -310,7 +370,6 @@ async function renderProblem(id) {
     on('#calc', () => floatShow('calc', !floatOpen('calc'))); on('#ref', () => floatShow('ref', !floatOpen('ref')));
     FLOAT.onchange = () => { const c = $('#calc'), r = $('#ref'), cols = $('.bb-cols'); if (c) c.classList.toggle('on', floatOpen('calc')); if (r) r.classList.toggle('on', floatOpen('ref')); if (cols) cols.classList.toggle('calc-open', floatOpen('calc')); };
     on('#annot', highlight);
-    const pas = $('#passage'); if (pas) pas.onclick = e => { const m = e.target.closest('mark'); if (m) { m.replaceWith(...m.childNodes); passageHTML = pas.innerHTML; } };
     on('#navbtn', () => { pop = pop === 'nav' ? null : 'nav'; draw(); }); on('#navclose', () => { pop = null; draw(); });
     on('#more', () => { pop = pop === 'more' ? null : 'more'; draw(); });
     on('#dir', () => { pop = pop === 'dir' ? null : 'dir'; draw(); }); on('#dirclose', () => { pop = null; draw(); });
