@@ -409,3 +409,6 @@ figure svg{max-width:100%;height:auto}
 .bb-result .x .sol .dz{margin:10px 0;border:1px solid #cfd8dc;border-radius:6px;overflow:hidden;background:#f6f8fa}
 .bb-result .x .sol .dzl{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#555;padding:5px 10px;border-bottom:1px solid #e0e4e8;background:#eef2f5}
 .bb-result .x .sol pre{margin:0;padding:10px 12px;font:14px/1.5 Menlo,Consolas,monospace;white-space:pre-wrap}
+
+/* College Board screen-reader-only text (e.g. "blank" after ______) */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
